@@ -698,7 +698,6 @@
                 // 如果檔案存在 再 push 
                 try {
                     // 發送 HEAD 請求檢查檔案狀態
-                    const imageSrc = imageData.src;
                     const response = fetch(imageSrc, { method: 'HEAD' });
 
                     // response.ok 代表 HTTP 狀態碼為 200-299 (檔案存在)
